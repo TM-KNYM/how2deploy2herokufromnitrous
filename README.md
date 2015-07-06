@@ -18,8 +18,8 @@ WebIDEっていいね。
 
 
 ## 環境構築
-環境構築とは名ばかりで、今回はアカウントを作成するだけです。
-いずれも公式ページのSign up for freeからアカウントを作成すればOK
+環境構築とは名ばかりで、今回はアカウントを作成するだけです。  
+いずれも公式ページのSign up for freeからアカウントが作れます。  
  1. Heroku　(https://www.heroku.com/)
  2. nitrous.io lite　(https://lite.nitrous.io/)
 
@@ -37,6 +37,7 @@ Python/Djangoでboxを作ると予め必要なものがインストールされ�
 
 #### Webアプリ作成
 ここを参考にしています。ただ、DBまわりは飛ばします。
+今回、作成するdeploy_testのソースコードもコミットしたので、そちらも参考になればと思います。  
 http://help.nitrous.io/django-app/
 nitrous.ioはvituralenv推奨(仮想環境)なので、vituralenvを入れます。
 
