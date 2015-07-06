@@ -7,13 +7,14 @@ http://XXXX.herokuapp.com をブラウザで開くと
 XXXXにはアプリ名が入ります。
 ###注意
 この説明ではDBやStaticファイルの設定方法は扱いません。  
-あくまでもDeployすることが目標です。
+あくまでもHerokuへデプロイすることが主目標です。
 
 ###事前に必要なもの
 
  - ブラウザ
 
-以上
+以上   
+WebIDEっていいね。
 
 
 ## 環境構築
@@ -32,11 +33,12 @@ Python/Djangoでboxを作ると予め必要なものがインストールされ�
 2. 言語の選択とアプリ名を決めます。言語は色々選べますが、今回はPython/djnagoを選択。アプリ名は適当でOKです。
 3. create boxをクリックして完成
 4. IDEを選択すると、その名の通りIDEが起動します。
-最後に確認のために、IDE下部にあるconsole画面にpython -Vと打つとpythonのバージョン情報を表示
+最後に確認のために、IDE下部にあるconsole画面にpython -Vと打つとpythonのバージョン情報を表示  
+
 #### Webアプリ作成
 ここを参考にしています。ただ、DBまわりは飛ばします。
 http://help.nitrous.io/django-app/
-とりあえず、vituralenv推奨(仮想環境)なので、vituralenvを入れます。
+nitrous.ioはvituralenv推奨(仮想環境)なので、vituralenvを入れます。
 
     $pip install virtualenv
 現状のディレクトリ構成は下記のようになっているので、workspace下に仮想環境とプロジェクトを作成します。
