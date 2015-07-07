@@ -1,5 +1,5 @@
-## Nitrous.io(lite)でHerokuへDjangoをDepoly
-無料のWebIDEであるnitrous.io liteを使って、ブラウザだけでWebアプリ（Django）を作成してみよう  
+## Nitrous.ioでHerokuへDjangoをDepoly
+無料のWebIDEであるnitrous.ioを使って、ブラウザだけでWebアプリ（Django）を作成してみよう  
 ついでに、herokuにデプロイしてみよう
 ### ゴール
 http://XXXX.herokuapp.com をブラウザで開くと  
@@ -20,8 +20,10 @@ WebIDEっていいね。
 ## 環境構築
 環境構築とは名ばかりで、今回はアカウントを作成するだけです。  
 いずれも公式ページのSign up for freeからアカウントが作れます。  
+もちろん、共にFreeプランで今回内容は実行可能です。
  1. Heroku　(https://www.heroku.com/)
- 2. nitrous.io lite　(https://lite.nitrous.io/)
+ 2. nitrous.io pro　(https://pro.nitrous.io/)
+ ※nitrous ioに関してはSMSで認証を通す必要があります。
 
 ## NitrousでDjangoアプリを作成
 
@@ -91,13 +93,13 @@ gunicornとはHerokuで推奨されているWSGIサーバーです。
 **現状のディレクトリ構成**
 
     ~/workspace
-    /venv
-        /bin
-        /deploy_test <=カレントはここ
-            /deploy_test
-        /include
-        /lib
-        /local
+    	/venv
+        	/bin
+        	/deploy_test <=カレントはここ
+            		/deploy_test
+        	/include
+        	/lib
+        	/local
 
 つぎに、ItsWorks!ではなく「Hello Nitrous&Heroku」と表示させるようにします。  
 まず、viewとなるviews.pyをvenv/deploy_test/deploy_testに作成
@@ -134,6 +136,14 @@ views.pyを以下のように編集して保存
 ここが作業するディレクトリになります。  
 
     $cd ~/workspace/venv/deploy_test/
+    ~/workspace
+    	/venv
+        	/bin
+        	/deploy_test <=ここでデプロイ作業をする
+            		/deploy_test
+        	/include
+        	/lib
+        	/local
 
 #### 下準備
 下準備としてherokuにアップロードするのに必要なファイルを作ります。
