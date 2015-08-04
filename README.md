@@ -29,7 +29,7 @@ WebIDEっていいね。
 
 早速、nitrous.ioでWebアプリ(django)を作ってみましょう
 #### boxの作成
-まず、Djnagoアプリ用のboxを作ります。boxとは実行環境のようなものです。
+まず、Djnagoアプリ用のboxを作ります。boxとは仮想実行環境のようなものです。 
 Python/Djangoでboxを作ると予め必要なものがインストールされた環境が使えるようになります。 
 1. nitrousにログインしてnew boxを選択 
 2. 言語の選択とアプリ名を決めます。言語は色々選べますが、今回はPython/djnagoを選択。アプリ名は適当でOKです。 
@@ -92,6 +92,7 @@ gunicornとはHerokuで推奨されているWSGIサーバーです。
 再度、**preview**  >  **port8888**で動作確認。  
 先ほどと同じようにIt works!と出ればひとまずOKです。  
 
+ 
 **現状のディレクトリ構成**
 
     ~/workspace
