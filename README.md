@@ -30,10 +30,15 @@ WebIDEっていいね。
 早速、nitrous.ioでWebアプリ(django)を作ってみましょう
 #### boxの作成
 まず、Djnagoアプリ用のboxを作ります。boxとは仮想実行環境のようなものです。 
+
 Python/Djangoでboxを作ると予め必要なものがインストールされた環境が使えるようになります。 
+
 1. nitrousにログインしてnew boxを選択 
+
 2. 言語の選択とアプリ名を決めます。言語は色々選べますが、今回はPython/djnagoを選択。アプリ名は適当でOKです。 
+
 3. create boxをクリックして完成 
+
 4. IDEを選択すると、その名の通りIDEが起動します。 
  
  
